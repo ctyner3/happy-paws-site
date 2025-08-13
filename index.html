@@ -79,8 +79,18 @@
                             <td class="p-4 text-gray-700">$55.00</td>
                             <td class="p-4 rounded-r-lg text-gray-700">$65.00</td>
                         </tr>
+                        <tr class="bg-orange-100 hover:bg-orange-200 transition-colors duration-200">
+                            <td class="p-4 rounded-l-lg font-medium text-gray-800">1-Time Pickup</td>
+                            <td colspan="2" class="p-4 rounded-r-lg text-gray-700 text-center">Price Varies - Contact for Quote</td>
+                        </tr>
                     </tbody>
                 </table>
+            </div>
+
+            <!-- New Callout for First Scoop Free Offer -->
+            <div class="mt-8 text-center bg-blue-600 text-white p-6 rounded-3xl shadow-xl">
+                <h3 class="text-2xl font-bold mb-2">Special Offer!</h3>
+                <p class="text-xl">Sign a monthly contract today and your first scoop is **FREE**!</p>
             </div>
         </section>
 
@@ -124,16 +134,49 @@
                 <p class="text-xl mb-8 max-w-3xl mx-auto">Contact us today to book your first scoop! We look forward to making your Topeka yard a happier place.</p>
                 <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
                     <a href="mailto:kansashappypaws@gmail.com" class="bg-orange-400 text-white font-bold py-4 px-8 rounded-full shadow-lg hover:bg-orange-500 transition-colors duration-300 text-xl">
-                        Email Us
+                        Email Us!
                     </a>
                     <a href="tel:785-350-6265" class="bg-orange-400 text-white font-bold py-4 px-8 rounded-full shadow-lg hover:bg-orange-500 transition-colors duration-300 text-xl">
-                        Call Us
+                        Call Us Today!
                     </a>
                     <a href="sms:785-350-6265" class="bg-orange-400 text-white font-bold py-4 px-8 rounded-full shadow-lg hover:bg-orange-500 transition-colors duration-300 text-xl">
-                        Text Us
+                        Text Us Today!
                     </a>
                 </div>
             </div>
+        </section>
+
+        <!-- New Inquiry Form Section -->
+        <section id="inquiry" class="py-16 max-w-2xl mx-auto">
+            <h2 class="text-4xl font-bold text-center text-gray-900 mb-4">Request a Quote</h2>
+            <p class="text-center text-lg text-gray-600 mb-8">Fill out the form below and we'll get back to you as soon as possible!</p>
+            
+            <!-- This form now uses Formspree to send the submission directly to your email. -->
+            <form action="https://formspree.io/f/myzpvyzd" method="POST" class="bg-white p-8 rounded-3xl shadow-xl">
+                <div class="mb-4">
+                    <label for="name" class="block text-gray-700 font-medium mb-2">Name:</label>
+                    <input type="text" id="name" name="name" required class="w-full p-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-orange-400">
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-gray-700 font-medium mb-2">Email:</label>
+                    <input type="email" id="email" name="email" required class="w-full p-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-orange-400">
+                </div>
+                <div class="mb-4">
+                    <label for="phone" class="block text-gray-700 font-medium mb-2">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" class="w-full p-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-orange-400">
+                </div>
+                <div class="mb-6">
+                    <label for="message" class="block text-gray-700 font-medium mb-2">Message:</label>
+                    <textarea id="message" name="message" rows="4" required class="w-full p-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-orange-400"></textarea>
+                </div>
+                <!-- This hidden field tells Formspree where to send the replies -->
+                <input type="hidden" name="_replyto" value="kansashappypaws@gmail.com" />
+                <div class="text-center">
+                    <button type="submit" class="bg-blue-600 text-white font-bold py-4 px-8 rounded-full shadow-lg hover:bg-blue-700 transition-colors duration-300 text-xl">
+                        Submit Inquiry
+                    </button>
+                </div>
+            </form>
         </section>
     </main>
 
@@ -143,3 +186,4 @@
 
 </body>
 </html>
+
